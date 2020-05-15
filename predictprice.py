@@ -42,7 +42,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=0)
 # print(prediction[:5])
 # print(y_test[:5])
 mae_array = {}
-for nodes in [5, 100, 500, 1000]:
+for nodes in [5,50, 100,200,300,400 ,500,600,700,800,900, 1000]:
     mae = get_mae(nodes, X_train, y_train, X_test, y_test)
     mae_array[nodes] = mae
 
